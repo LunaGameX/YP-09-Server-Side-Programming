@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 try {
     //Включаем экземпляр приложения и запускаем его
-    $app = require_once __DIR__ '/../core/bootstrap.php';
+    $app = require_once __DIR__ . '/../core/bootstrap.php';
 
     $app -> run();
 } catch (\Throwable $exception) {
