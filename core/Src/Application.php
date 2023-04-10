@@ -13,7 +13,7 @@ class Application {
 
     public function __get($key) {
         if ($key === 'settings') {
-            returnb $this -> settings;
+            return $this -> settings;
         }
         throw new Error('Accessing a non-existent property');
     }
