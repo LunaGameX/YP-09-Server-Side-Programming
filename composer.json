@@ -1,0 +1,22 @@
+{
+    "name": "lunagamex/yp-09-server-side-programming",
+    "description": "Laboratornya-Practicheskaya rabota №1 [bkk] [404]",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lunagamex",
+            "email": "kirillkorovin02@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "core/Src/",
+            "": "app/"
+        }
+    }
+}
