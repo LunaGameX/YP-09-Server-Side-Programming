@@ -5,10 +5,10 @@ return [
     'root' => 'YP-09-Server-Side-Programming',
 
     //Директория в которых будет производится поиск классов
-    'classes' => [
-        'app',
-        'core'
-    ],
+//    'classes' => [
+//        'app',
+//        'core'
+//    ],
 
     //Настройка директории с маршрутами
     'routes' => 'routes',
