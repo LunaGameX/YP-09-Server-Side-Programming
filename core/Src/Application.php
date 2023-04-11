@@ -19,6 +19,6 @@ class Application {
     }
 
     public function run(): void {
-        echo 'Working';
+        echo 'Все отрабатывает как надо!';
     }
 }
