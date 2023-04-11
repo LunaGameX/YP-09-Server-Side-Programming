@@ -10,7 +10,7 @@ class Site {
     public function index(): string {
         $view = new View();
         return $view -> render('site.hello', ['message' => 'index отрабатывает штатно']);
-
+        echo "img src = gallery.png";
     }
 
     public function hello(): string {
