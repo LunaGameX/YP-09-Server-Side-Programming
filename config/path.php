@@ -2,7 +2,7 @@
 return [
 
     //Адресс относительного домена
-    'root' => 'pop-it-mvc',
+    'root' => 'YP-09-Server-Side-Programming',
 
     //Директория в которых будет производится поиск классов
     'classes' => [
