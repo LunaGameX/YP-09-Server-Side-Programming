@@ -23,6 +23,6 @@ class Application {
     public function run(): void {
         $this -> route -> setPrefix($this -> settings -> getRootPath());
         $this -> route -> start();
-        echo 'Все отрабатывает как надо!';
+//        echo 'Все отрабатывает как надо!';
     }
 }

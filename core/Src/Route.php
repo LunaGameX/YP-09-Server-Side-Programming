@@ -14,7 +14,7 @@ class Route {
 
     public static function add(string $route, array $action): void {
         if (!array_key_exists($route, self::$routes)) {
-            self::$routes[$route] = $actions;
+            self::$routes[$route] = $action;
         }
     }
 
