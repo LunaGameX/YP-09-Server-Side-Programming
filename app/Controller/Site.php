@@ -3,13 +3,14 @@
 namespace Controller;
 
 use http\Message;
+use Model\Post;
 use Src\View;
 use Illuminate\Database\Capsule\Manager as DB;
 
 class Site {
 
     public function index(): string {
-        $posts = DB::table('posts') -> get();
+        $posts = Post::all();
         return (new View()) -> render('site.hello', ['message' => 'index отрабатывает штатно']);
     }
 
