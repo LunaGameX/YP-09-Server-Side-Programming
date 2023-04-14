@@ -3,9 +3,9 @@
 namespace Src;
 
 use Error;
-use illuminate\Container\Container;
-use illuminate\Events\Dispatcher;
-use illuminate\Database\Capsule\Manager as Capsule;
+use Illuminate\Container\Container;
+use Illuminate\Events\Dispatcher;
+use Illuminate\Database\Capsule\Manager as Capsule;
 
 class Application {
     private Settings $settings;
