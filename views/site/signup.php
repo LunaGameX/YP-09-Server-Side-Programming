@@ -5,15 +5,15 @@
 <form method="post">
 
     <label>
-        <input type="text" name="name">
+        <input type="text" name="name" placeholder="name">
     </label>
 
     <label>
-        <input type="text" name="login">
+        <input type="text" name="login" placeholder="login">
     </label>
 
     <label>
-        <input type="password" name="password">
+        <input type="password" name="password" placeholder="password">
     </label>
 
     <button>Зарегистрироваться</button>
