@@ -49,6 +49,6 @@ class Route {
     }
 
     public function __construct(string $prefix = '') {
-        self::$prefix($prefix);
+        self::setPrefix($prefix);
     }
 }
