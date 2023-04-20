@@ -1,12 +1,12 @@
 <?php
 
-namespace SingletonTrait;
+namespace Src\Traits;
 
 trait SingletonTrait {
 
     private static self $instance;
 
-    private static function single(): self {
+    public static function single(): self {
         if (empty(self::$instance)) self::$instance = new static();
         return self::$instance;
     }

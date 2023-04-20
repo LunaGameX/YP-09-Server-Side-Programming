@@ -8,6 +8,7 @@ use FastRoute\DataGenerator\MarkBased;
 use FastRoute\Dispatcher\MarkBased as Dispatcher;
 use Src\Traits\SingletonTrait;
 
+
 class Middleware {
 
     //Изпользуем трейт
@@ -49,7 +50,7 @@ class Middleware {
 
     //Поиск middlewares по адресу
     private function getMiddlewaresForRoute(string $httpMethod, string $uri): array {
-        $dispatcherMiddleware - new Dispatcher($this -> middlewareCollector -> getData());
+        $dispatcherMiddleware = new Dispatcher($this -> middlewareCollector -> getData());
         return $dispatcherMiddleware -> dispath($httpMethod, $uri) [1] ?? [];
     }
 }
