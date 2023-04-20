@@ -51,6 +51,6 @@ class Middleware {
     //Поиск middlewares по адресу
     private function getMiddlewaresForRoute(string $httpMethod, string $uri): array {
         $dispatcherMiddleware = new Dispatcher($this -> middlewareCollector -> getData());
-        return $dispatcherMiddleware -> dispath($httpMethod, $uri) [1] ?? [];
+        return $dispatcherMiddleware -> dispatch($httpMethod, $uri) [1] ?? [];
     }
 }

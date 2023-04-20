@@ -65,7 +65,7 @@ class Route {
     {
         // Получить метод и URI откуда-то
         $httpMethod = $_SERVER['REQUEST_METHOD'];
-        $uri = $_SERVER['REQUEST_METHOD'];
+        $uri = $_SERVER['REQUEST_URI'];
 
         // Удаляем строку запроса (?foo=bar) и декодируем URI
         if (false !== $pos = strpos($uri, '?')) {
@@ -78,6 +78,7 @@ class Route {
         $dispatcher = new Dispatcher($this->routeCollector->getData());
 
         $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
+
         switch ($routeInfo[0]) {
 
             case Dispatcher::NOT_FOUND:
