@@ -2,12 +2,12 @@
 
 use Src\Route;
 
-Route::add('go', [Controller\Site::class, 'index']);
+Route::add('GET', '/go', [Controller\Site::class, 'index']) -> middleware('auth');
 
-Route::add('hello', [Controller\Site::class, 'hello']);
+Route::add('GET', '/hello', [Controller\Site::class, 'hello']) -> middleware('auth');
 
-Route::add('signup', [Controller\Site::class, 'signup']);
+Route::add('GET', '/signup', [Controller\Site::class, 'signup']) -> middleware('auth');
 
-Route::add('login', [Controller\Site::class, 'login']);
+Route::add('GET', '/login', [Controller\Site::class, 'login']) -> middleware('auth');
 
-Route::add('logout', [Controller\Site::class, 'logout']);
+Route::add('GET', '/logout', [Controller\Site::class, 'logout']) -> middleware('auth');
