@@ -5,5 +5,10 @@ return [
     'auth' => \Src\Auth\Auth::class,
 
     //Класс пользователя
-    'identity' => \Model\User::class
+    'identity' => \Model\User::class,
+
+    //Классы для middleware
+    'routeMiddleware' => [
+        'auth' => \Middlewares\AuthMiddleware::class,
+    ]
 ];
