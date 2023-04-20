@@ -19,13 +19,13 @@ class Application {
         $this -> settings = $settings;
 
         //Привзяываем класс маршрутизации с установкой префикса
-        $this -> route = new Route($this -> settings ->getRootPath());
+        $this -> route = Route::single() -> setPrefix($this -> settings -> getRootPath());
 
         //Создаем класс менеджера для базы данных
         $this -> dbManager = new Capsule();
 
         //Создаем класс для аутентификации на основе настроек приложения
-        $this -> auth = new $this -> settings -> app['auth'];
+        $this -> auth = new $this -> settings -> app ['auth'];
 
         //Настройка для работы с базой данных
         $this -> dbRun();
